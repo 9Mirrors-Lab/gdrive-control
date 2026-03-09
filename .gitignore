@@ -1,0 +1,22 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.env
+.env.local
+*.log
+
+# Next.js / dashboard
+dashboard/.next/
+dashboard/node_modules/
+dashboard/out/
+
+# Run outputs (optional: remove to track run artifacts)
+runs/
+
+# OS
+.DS_Store
+Thumbs.db
