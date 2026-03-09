@@ -13,6 +13,31 @@ __pycache__/
 dashboard/.next/
 dashboard/node_modules/
 dashboard/out/
+# Dashboard: ignore Drive/sample data (commit only app source)
+dashboard/1.Organize/
+dashboard/1Fractal/
+dashboard/3d/
+dashboard/AI & Automation Tools/
+dashboard/AI Business & Monetization/
+dashboard/Business & Growth Metrics/
+dashboard/Client Projects (Healthcare & Consulting)/
+dashboard/Colab Notebooks/
+dashboard/Drive Structure & Audits/
+dashboard/Fractal/
+dashboard/Fractal-vault/
+dashboard/Opal/
+dashboard/Personal & Miscellaneous/
+dashboard/Product & Design Thinking/
+dashboard/Product Backlogs & Sprints/
+dashboard/Professional Development & Resumes/
+dashboard/Trading & Market Analysis/
+dashboard/_quarantine/
+dashboard/test/
+dashboard/*.pptx
+dashboard/*.xlsx
+dashboard/*.docx
+dashboard/*.pdf
+dashboard/*.zip
 
 # Run outputs (optional: remove to track run artifacts)
 runs/

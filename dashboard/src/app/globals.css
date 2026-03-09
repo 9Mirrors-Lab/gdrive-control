@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-card: var(--card);
+  
+  --color-drive-active: var(--drive-active);
+  --color-drive-review: var(--drive-review);
+  --color-drive-archive: var(--drive-archive);
+  --color-drive-dormant: var(--drive-dormant);
+}
+
+:root {
+  /* Enforce Dark Editorial globally */
+  --background: oklch(0.16 0.01 250); /* Deep neutral blue/zinc, not pure black */
+  --foreground: oklch(0.92 0.01 250); /* Soft white */
+  --card: oklch(0.18 0.01 250); 
+  --card-foreground: oklch(0.92 0.01 250);
+  
+  --muted: oklch(0.22 0.01 250);
+  --muted-foreground: oklch(0.65 0.01 250);
+  
+  --accent: oklch(0.24 0.01 250);
+  --accent-foreground: oklch(0.95 0.01 250);
+  
+  --border: oklch(0.25 0.01 250);
+  --ring: oklch(0.40 0.01 250);
+  
+  /* Drive semantic colors, organic tones */
+  --drive-active: oklch(0.75 0.12 160); /* botanical green */
+  --drive-review: oklch(0.78 0.12 80); /* warm amber */
+  --drive-archive: oklch(0.65 0.08 280); /* maritime blue */
+  --drive-dormant: oklch(0.40 0.02 250); /* dim grey */
+  
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    /* No scrollbars for minimal chrome */
+    scrollbar-width: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-medium tracking-tight text-foreground/90;
+  }
+}
